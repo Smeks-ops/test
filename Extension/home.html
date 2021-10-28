@@ -1,0 +1,401 @@
+
+<!-- saved from url=(0040)https://instoo.com/AutoBaiter/home5.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><div id="onboard" class="modal fade" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<br> <h4 class="modal-title">QuickStart Guide
+</h4>
+</div>
+<div class="modal-body">
+<h3>Welcome to Instoo!</h3><br><br>
+Instoo works by interacting with real people, which sends notifications to their phones like advertisements.
+First, pick targets related to your account:<br><br>
+<center>
+<h3 id="hashtags" data-step="2" data-intro="Add Hashtags first, Like &#39;dogsofinstagram&#39;." class="text-left text-instafollow">
+Target Hashtags
+<div class="form-group setting-options">
+<div class="input-group">
+<div style="max-width:250px;" class="bootstrap-tagsinput"> <input type="text" class="bootstrap-tagsinput form-control" data-role="tagsinput" id="media_tags2" value="" style="display: none;">
+</div>
+</div>
+</div>
+</h3>
+<button type="button" data-dismiss="modal" href="#step2" class="btn btn-lg btn-primary" data-toggle="modal" id="step1">Next</button>
+</center>
+</div>
+</div>
+</div>
+</div>
+<div id="step2" class="modal fade" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<br> <h4 class="modal-title">Set The Language At Instagram.com to English
+</h4>
+</div>
+<div class="modal-body">
+Our new targeting algorithm requires the language at Instagram.com to be set to english.<br><br>
+Please check now before starting the bot<br><br><br>
+1) Click your profile picture in the top right corner, then click instagram-user-profileProfile.<br><br>
+2) Click Edit Profile.<br><br>
+3) Click Language at the very bottom of the page and select a new language.<br><br>
+<button type="button" data-dismiss="modal" href="#step3" class="btn btn-lg btn-primary" data-toggle="modal" id="step2">Next</button>
+</div>
+</div>
+</div>
+</div>
+<div id="step3" class="modal fade" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<br> <h4 class="modal-title">Enable Likes, Follows, Stories Daily
+</h4>
+</div>
+<div class="modal-body">
+Instoo runs in background tabs and will auto-shut off after 10 hours.<br><br>
+You only need to turn Instoo on once a day to get constant daily growth.<br><br>
+The sliders are upper limits, but Instoo will auto-adjust speeds dynamically for each user.<br><br>
+Make sure the bot does at least 100 likes and 100 follows a day.<br><br>
+Keep the Instoo tab and the Instagam tab open. Don't allow your PC/laptop to auto-sleep.<br><br>
+Disable javascript throttling in chrome://flags to allow Instoo to run fast in the background.<br><br>
+<button type="button" data-dismiss="modal" class="btn btn-lg btn-primary" id="finalstep">Start!</button>
+</div>
+</div>
+</div>
+</div>
+<h3 data-step="4" data-intro="Leave Instoo and Instagram.com tabs open, and run Instoo for 8 hours per day for constant daily growth!"></h3>
+<h3 data-step="5" data-intro="Contact the live chat support for help finding good targets or optimizing growth."></h3>
+<h3 data-step="1" data-intro="Welcome! Click Next to follow the tutorial, or click Skip."></h3>
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<div>
+<div class="col-sm-8" style="padding-right: 100px;">
+<div class="row">
+<div id="chartContainer" style=" height:190px; width: 100%;"> <canvas height="190px" id="canvas"></canvas></div>
+<div class="col-xs-12 instoo-block">
+<br> <div id="container"></div>
+<div id="errors"></div>
+<div class="row">
+<div class="col-xs-2">
+<h3 data-step="3" data-intro="Enable the Like and Follow switches" class="text-left text-instafollow">
+Follow
+</h3>
+</div>
+<div class="col-xs-2">
+<label class="switch">
+<input id="set-follow-check" type="checkbox">
+<span class="slider round"></span>
+</label>
+</div>
+<div class="col-xs-2">
+<h3 id="follow-pool-num" class="text-center text-instafollow">0</h3>
+</div>
+<div class="col-xs-6">
+<label class="text-left text-instafollow" for="customRange1"><h4><div id="follow_set"></div></h4>
+</label>
+<input type="range" class="custom-range" min="0" max="1000" id="customRange1">
+</div>
+</div>
+<div class="row">
+<div class="col-xs-2">
+<h3 class="text-left text-instafollow" style="padding-right: 0px;">
+DM
+</h3>
+</div>
+<div class="col-xs-2">
+<label class="switch">
+<input id="set-comment-check" type="checkbox">
+<span class="slider round"></span>
+</label>
+</div>
+<div class="col-xs-2">
+<h3 id="comment-pool-num" class="text-center text-instafollow">0</h3>
+</div>
+<div class="col-xs-6">
+<label class="text-left text-instafollow" for="customRange1"><h4><div id="comment_set"></div></h4>
+</label>
+<input type="range" class="custom-range" min="0" max="20" id="customRange4">
+</div>
+</div>
+<div class="row">
+<div class="col-xs-2">
+<h3 class="text-left text-instafollow" style="padding-left: 0px;">
+Unfollow
+</h3>
+</div>
+<div class="col-xs-2">
+<label class="switch">
+<input id="set-unfollow-check" type="checkbox">
+<span class="slider round"></span>
+</label>
+</div>
+<div class="col-xs-2">
+<h3 id="unfollow-pool-num" class="text-center text-instafollow">0</h3>
+</div>
+<div class="col-xs-6">
+<label class="text-left text-instafollow" for="customRange1"><h4><div id="unfollow_set"></div></h4>
+</label>
+<input type="range" class="custom-range" min="0" max="1000" id="customRange2">
+</div>
+</div>
+<div class="row">
+<div class="col-xs-2">
+<h3 class="text-left text-instafollow" style="padding-right: 75px;">
+Like
+</h3>
+</div>
+<div class="col-xs-2">
+<label class="switch">
+<input id="set-like-check" type="checkbox">
+<span class="slider round"></span>
+</label>
+</div>
+<div class="col-xs-2">
+<h3 id="like-pool-num" class="text-center text-instafollow">0</h3>
+</div>
+<div class="col-xs-6">
+<label class="text-left text-instafollow" for="customRange1"><h4><div id="like_set"></div></h4>
+</label>
+<input type="range" class="custom-range" min="0" max="1000" id="customRange3">
+</div>
+</div>
+<div class="row">
+<div class="col-xs-2">
+<h3 class="text-left text-instafollow" style="padding-right: 75px;">
+Stories
+</h3>
+</div>
+<div class="col-xs-2">
+<label class="switch">
+<input id="set-story-check" type="checkbox">
+<span class="slider round"></span>
+</label>
+</div>
+<div class="col-xs-2">
+<h3 id="story-pool-num" class="text-center text-instafollow">0</h3>
+</div>
+<div class="col-xs-6">
+<label class="text-left text-instafollow" for="customRange5"><h4><div id="story_set"></div></h4>
+</label>
+<input type="range" class="custom-range" min="0" max="1000" disabled="" id="customRange5">
+</div>
+</div>
+<div class="row" id="tiktoksettings">
+<div class="col-xs-2">
+<h3 class="text-left text-instafollow" style="padding-right: 75px;">
+TikTok
+</h3>
+</div>
+<div class="col-xs-2">
+<label class="switch">
+<input id="set-tiktok-check" type="checkbox">
+<span class="slider round"></span>
+</label>
+</div>
+<div class="col-xs-2">
+<h3 id="tiktok-pool-num" class="text-center text-instafollow">0</h3>
+</div>
+<div class="col-xs-6">
+<label class="text-left text-instafollow" for="customRange6"><h4><div id="tiktok_set"></div></h4>
+</label>
+<input type="range" class="custom-range" min="0" max="300" id="customRange6"><br>
+</div>
+</div>
+<br>
+<button id="slow" type="button" class="btn btn-primary">Slow</button>
+<button id="medium" type="button" class="btn btn-primary">Medium</button>
+<button id="fast" type="button" class="btn btn-primary active">Fast</button>
+<br>
+</div>
+<br>
+<br></div>
+<div class="row instoo-block">
+<div class="col-xs-6">
+<div id="collect-users-block" class="row">
+<div class="col-xs-12">
+<div class="row">
+<div class="col-xs-12">
+<h3 class="text-left text-instafollow">
+Target Accounts
+<div class="form-group setting-options">
+<div class="input-group">
+<div style="max-width:250px;" class="bootstrap-tagsinput"> <input type="text" class="bootstrap-tagsinput form-control" data-role="tagsinput" id="media_accounts" value="" style="display: none;">
+ </div>
+</div>
+</div>
+</h3>
+<div class="follow-table-scroll scroll-style">
+<table class="table">
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-2 align-mid-vertical">
+</div>
+<div class="col-xs-6">
+<div id="collect-tags-block" class="row">
+<div class="col-xs-12">
+<div class="row">
+<div class="col-xs-12">
+<h3 id="hashtags" data-step="2" data-intro="Add Hashtags first, Like &#39;dogsofinstagram&#39;." class="text-left text-instafollow">
+Target Hashtags
+<div class="form-group setting-options">
+<div class="input-group">
+<div style="max-width:250px;" class="bootstrap-tagsinput"> <input type="text" class="bootstrap-tagsinput form-control" data-role="tagsinput" id="media_tags" value="" style="display: none;">
+</div>
+</div>
+</div>
+</h3>
+<div class="follow-table-scroll scroll-style">
+<table class="table">
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row instoo-block">
+<div class="col-xs-12">
+<div id="collect-comments-block" class="row">
+<div class="col-xs-12">
+<div class="row">
+<div class="col-xs-12">
+<h3 class="text-left text-instafollow">
+Auto-DM Spintax
+<div class="form-group setting-options">
+<div class="input-group">
+<div style="max-width:250px;" class="bootstrap-tagsinput"> <input type="text" class="bootstrap-tagsinput form-control" data-role="tagsinput" id="comment_tags" value="" style="display: none; white-space: pre-wrap;">
+</div>
+</div>
+</div>
+</h3>
+<div class="follow-table-scroll scroll-style">
+<table class="table">
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div class="sub-user">
+</div>
+</div>
+</div>
+<div class="col-xs-4">
+<div id="story-block" class="row">
+<div class="col-xs-12">
+<div class="row">
+<div class="col-xs-12">
+<h3 class="text-left text-instafollow">
+Viewed Stories
+</h3>
+<div class="follow-table-scroll scroll-style">
+<table class="table">
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="like-block" class="row">
+<div class="col-xs-12">
+<div class="row">
+<div class="col-xs-12">
+<h3 class="text-left text-instafollow">
+Liked Posts
+</h3>
+<div class="follow-table-scroll scroll-style">
+<table class="table">
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="follow-block" class="row">
+<div class="col-xs-12">
+<div class="row">
+<div class="col-xs-12">
+<h3 class="text-left text-instafollow">
+Followed Users
+</h3>
+<div class="follow-table-scroll scroll-style">
+<table class="table">
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="unfollow-block" class="row">
+<div class="col-xs-12">
+<div class="row">
+<div class="col-xs-12">
+<h3 class="text-left text-instafollow">
+Unfollowed Users
+</h3>
+<div class="follow-table-scroll scroll-style">
+<table class="table">
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="comment-block" class="row">
+<div class="col-xs-12">
+<div class="row">
+<div class="col-xs-12">
+<h3 class="text-left text-instafollow">
+Auto-DMs
+</h3>
+<div class="follow-table-scroll scroll-style">
+<table class="table">
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hide">
+<div id="container"></div>
+<div id="container2"></div>
+<div id="container3"></div>
+<div id="container4"></div>
+<div id="container5"></div>
+</div>
+</body></html>

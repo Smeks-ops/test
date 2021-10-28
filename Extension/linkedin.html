@@ -1,0 +1,193 @@
+
+<!-- saved from url=(0043)https://instoo.com/AutoBaiter/linkedin.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><div id="editLinkedin_modal" class="modal fade" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<br> <h4 class="modal-title">Edit
+</h4>
+</div>
+<div class="modal-body">
+<button type="button" data-dismiss="modal" href="#step3" class="btn btn-lg btn-primary" data-toggle="modal" id="step2">Next</button>
+</div>
+</div>
+</div>
+</div>
+<h3 data-step="5" data-intro="In advanced settings, you can set a scheduled start/stop time, so the bot will run daily the on the same schedule without needing to touch it. Instoo will stop at your set time, and then reset at midnight to run again tomorrow. Remember not to run Instoo longer than 8 hours per day if you don&#39;t use the scheduler."></h3>
+<h3 data-step="6" data-intro="You can now leave Instoo+Instagram running background tabs while you work in other tabs!"></h3>
+<h3 data-step="1" data-intro="Welcome to Instoo! Follow along with this visual tutorial to get started in minutes. You might need to zoom out in chrome to see all of the steps."></h3>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-12">
+<div class="row">
+<div class="col-sm-8" style="padding-right: 100px;">
+<div class="row">
+<div id="container"></div>
+<div id="errors">Log in at linkedin.com with a new account to automate collecting leads. Check the Social CRM dashboard for more data.</div>
+<div id="chartContainer" style=" height:190px; width: 100%;"> <canvas height="190px" id="canvas"></canvas> </div>
+<div class="col-sm-12">
+<div class="row">
+<div class="col-sm-2">
+<h3 data-step="3" data-intro="After you add targets, enable likes and follows. Stories are necessary to mask the other activities, so it will enable by default." class="text-left text-instafollow">
+Connect
+</h3>
+</div>
+<div class="col-sm-2">
+<label class="switch">
+<input id="set-follow-Linkedin-check" type="checkbox">
+<span class="slider round"></span>
+</label>
+</div>
+<div class="col-sm-2">
+<h3 id="follow-pool-linkedin-num" class="text-center text-instafollow">0</h3>
+</div>
+<div class="col-sm-6">
+<label class="text-left text-instafollow" for="customRange1"><h4><div id="follow_linkedin_set"></div></h4>
+</label>
+<input type="range" class="custom-range" min="0" max="1000" id="customRangeLinkedinFollows">
+</div>
+</div>
+<div class="row">
+<div class="col-sm-2">
+<h3 class="text-left text-instafollow" style="padding-right: 75px;">
+Collect
+</h3>
+</div>
+<div class="col-sm-2">
+<label class="switch">
+<input id="set-like-Linkedin-check" type="checkbox">
+<span class="slider round"></span>
+</label>
+</div>
+<div class="col-sm-2">
+<h3 id="like-pool-linkedin-num" class="text-center text-instafollow">0</h3>
+</div>
+<div class="col-sm-6">
+<label class="text-left text-instafollow" for="customRange1"><h4><div id="like_linkedin_set"></div></h4>
+</label>
+<input type="range" class="custom-range" min="0" max="1000" id="customRangeLinkedinLikes">
+</div>
+</div>
+</div>
+
+<br>
+<div class="row">
+<div class="col-sm-6 col-sm-offset-3">
+<button id="slow" type="button" class="btn btn-primary">Slow</button>
+<button id="medium" type="button" class="btn btn-primary">Medium</button>
+<button id="fast" type="button" class="btn btn-primary active">Fast</button>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-6 col-sm-offset-3">
+<button id="export_linkedin" type="button" class="btn btn-primary">Export Data</button>
+</div>
+</div>
+<div class="row">
+<div style="margin-top:5px;" class="col-sm-5">
+<div id="collect-tags-block" class="row">
+<div class="col-sm-12">
+<div class="row">
+<div class="col-sm-12">
+<h3 id="hashtags" data-step="2" data-intro="Looks like you need to add more targets to gather stories to watch. The algorithm requires stories to mask all activities, so add Targets here first! Like &#39;dogsofinstagram&#39;." class="text-left text-instafollow">
+Search Terms
+<div class="form-group setting-options">
+<div class="input-group">
+<div style="max-width:250px;" class="bootstrap-tagsinput"> <input type="text" class="bootstrap-tagsinput form-control" data-role="tagsinput" id="media_tags" value="" style="display: none;">
+</div>
+</div>
+</div>
+</h3>
+<div class="follow-table-scroll scroll-style">
+<table class="table">
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row hide">
+<div class="col-sm-5">
+<div id="collect-comments-block" class="row">
+<div class="col-sm-12">
+<div class="row">
+<div class="col-sm-12">
+<h3 class="text-left text-instafollow">
+Comments
+<div class="form-group setting-options">
+<div class="input-group">
+<div style="max-width:250px;" class="bootstrap-tagsinput"> <input type="text" class="bootstrap-tagsinput form-control" data-role="tagsinput" id="comment_tags" value="" style="display: none;">
+</div>
+</div>
+</div>
+</h3>
+<div class="follow-table-scroll scroll-style">
+<table class="table">
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div class="sub-user">
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div id="like-linkedin-block" class="row">
+<div class="col-sm-12">
+<div class="row">
+<div class="col-sm-12">
+<h3 class="text-left text-instafollow">
+Collected Contacts
+</h3>
+<div class="follow-table-scroll scroll-style">
+<table class="table">
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="follow-block-linkedin" class="row">
+<div class="col-sm-12">
+<div class="row">
+<div class="col-sm-12">
+<h3 class="text-left text-instafollow">
+Connected Contacts
+</h3>
+<div class="follow-table-scroll scroll-style">
+<table class="table">
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hide">
+ <div id="container"></div>
+<div id="container2"></div>
+<div id="container3"></div>
+<div id="container4"></div>
+<div id="container5"></div>
+</div>
+</div></body></html>

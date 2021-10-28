@@ -1,0 +1,70 @@
+{
+  "manifest_version": 2,
+
+  "name": "Zwilt",
+  "description": "Zwilt is a free service that lets you grow your followers and connections on social media faster over time. We interact with accounts likely to organically grow your own by simulating human behavior in your browser.",
+  "version": "14.3.6",
+  "icons": { "512": "icon.png" },
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_security_policy": "script-src 'self';  object-src 'self'",
+  "content_scripts": [
+  {
+    "matches": ["*://*.instagram.com/*"],
+
+    "css": [],
+    "js": ["jquery-3.5.1.min.js", "content.js"]
+  },
+ {
+    "matches": ["*://*.tinder.com/*"],
+
+    "css": [],
+    "js": ["jquery-3.5.1.min.js", "tinder2.js"]
+  },
+ {
+    "matches": ["*://*.linkedin.com/*"],
+
+    "css": [],
+    "js": ["jquery-3.5.1.min.js", "content_linkedin.js"]
+  },
+ {
+   "matches": ["*://*.pinterest.com/*", "*://*.pinterest.co.uk/*"],
+    "css": [],
+    "js": ["jquery-3.5.1.min.js", "pinterest.js"]
+  },
+ {
+    "matches": ["*://*.tiktok.com/*"],
+
+    "css": [],
+    "js": ["jquery-3.5.1.min.js", "tiktok.js"]
+  },
+     {
+    "matches": ["*://*.facebook.com/*"],
+
+    "css": [],
+    "js": ["jquery-3.5.1.min.js", "facebook.js"]
+  },
+
+   {
+    "matches": ["*://*.twitter.com/*"],
+
+    "css": [],
+    "js": ["jquery-3.5.1.min.js", "twitter.js"]
+  }
+],
+
+  "background": {
+      "scripts": ["jquery-3.5.1.min.js", "background.js"]
+    },
+
+  "permissions": [
+    "tabs", "*://*.instagram.com/*",
+    "storage",
+        "webRequest",
+"downloads",
+    "https://instoo.com/" 
+     ]
+}
+
+

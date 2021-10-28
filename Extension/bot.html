@@ -1,0 +1,248 @@
+<html>
+<head>
+
+
+	<link rel="stylesheet" href="libs/font-awesome.min.css">
+<script src="jquery-3.5.1.min.js" ></script>
+<script src="canvasjs.min.js" ></script>
+<script src="intro.min.js" ></script>
+<script src="fonts/c78c950296.js"></script>
+
+<script src="Chart.min.js"></script>
+
+
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/bootstrap_tags/bootstrap-tagsinput.js" ></script>
+
+        <link rel="stylesheet" href="content.css">
+        <link rel="stylesheet" href="libs/bootstrap.min.css">
+        <link rel="stylesheet" href="libs/bootstrap_tags/bootstrap-tagsinput.css">
+
+<script src='index.js'></script>
+
+
+
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid container-wide">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/bot.html"><h4>Zwilt<img width="20px" height="20px" src="icon.png"></img></h4></a>
+
+
+        </div>
+        <div class="row">
+          <ul class="nav navbar-nav">
+
+
+          </ul>
+
+          <ul class="nav navbar-nav col-xs-6 align-items-center">
+          </ul>
+
+          <ul class="nav navbar-nav">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+<style>
+#sidebar-wrapper{
+display:none;
+  overflow: auto;
+
+
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+     margin-bottom: 0px !important;
+    border: 1px solid transparent;
+}
+.jumbotron {
+  padding-top:0px !important;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee;
+}
+.modal.modal-wide .modal-dialog {
+  width: 90%;
+}
+.modal-wide .modal-body {
+  overflow-y: auto;
+}
+
+/* irrelevant styling */
+body { text-align: center; }
+body p { 
+  max-width: 400px; 
+  margin: 20px auto; 
+}
+#tallModal .modal-body p { margin-bottom: 900px }
+.modal.large {
+     width: 80%;
+}
+.modal-backdrop{
+display:none;
+}
+.body-wrapper {
+    padding-bottom: 0px !important;
+}
+label {
+    margin-top: 20px !important;
+    margin-bottom: 0px !important;
+}
+.container-fluid .jumbotron {
+    padding-right: 0px !important; 
+     padding-left: 0px !important; 
+}
+
+#switchpaypal{
+z-index:10000000;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.95);
+ color:white;
+}
+
+
+#trial{
+z-index:10000000;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.95);
+}
+#enterprise{
+z-index:10000000;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.95);
+}
+#update{
+z-index:10000000;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.95);
+}
+</style>
+
+
+
+
+<style>
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    #calendar {
+      max-width: 900px;
+      margin: 40px auto;
+    }
+
+  </style>
+
+
+</head>
+<body>
+
+  <div class="container-fluid">
+
+
+</center>
+
+
+
+<div class="row">
+
+	<div id="overlay">
+		<div id="overlay-text">
+			<b><h2>1. Click on the Instagram tab, wait for it to load, then refresh OR log in. <br>2. If this message doesn't disappear:<br> PLEASE NAVIGATE TO YOUR INSTAGRAM PROFILE AND CLICK THE BUTTON BELOW.<br>.
+<br>
+<button  id="userLogin" class="btn btn-md btn-warning button-settings" type="button" style="display:none;">
+                                                 Navigate To Instagram Profile And Click Here To Login
+                                                </button>
+
+</h2></b>
+		</div>
+	</div>
+	
+
+	
+	
+    
+   <div class="jumbotron text-center header-banner">
+		
+		<div class="body-wrapper">
+			<div id="sidebar-wrapper">
+				<br><br>
+<div id="sidebar-instoo" class="instoo-block effect egeon" style="width:100%">
+                  <img style="display:none;position:fixed;z-index:-100000;left:150%;" width="80" height="80" class="img-current-user" src=""/>
+
+				<div id="sidebar-home" class="sidebar-item-active row"><div class="col-xs-5"> <a href="#" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i></a></div><div class="col-xs-5"> Instagram</div></div>
+				<div id="sidebar-home-tiktok" class="sidebar-item row"><div class="col-xs-5"><a href="#" class="tiktok"><i class="fa fa-music" aria-hidden="true"></i></a></div><div class="col-xs-5"> TikTok Beta</div></div>
+				<div id="sidebar-home-tw" class="sidebar-item row"><div class="col-xs-5"><a href="#" class="tw" ><i class="fa fa-twitter" aria-hidden="true"></i></a></div><div class="col-xs-5"> Twitter Beta</div></div>
+				<div id="sidebar-home-link2" class="sidebar-item row"> <div class="col-xs-5">     <a href="#" class="in" ><i class="fa fa-linkedin" aria-hidden="true"></i></a></div> <div class="col-xs-5"> Linkedin Beta</div></div>
+				<div id="sidebar-home-pinterest" class="sidebar-item row"> <div class="col-xs-5">     <a href="#" class="pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></div> <div class="col-xs-5"> Pinterest Beta</div></div>
+				<div id="sidebar-home-facebook" class="sidebar-item row"> <div class="col-xs-5">     <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></div> <div class="col-xs-5"> Facebook Beta</div></div>
+				<div id="sidebar-home-tinder2" class="sidebar-item row"> <div class="col-xs-5">     <a href="#" class="tinder" title="Join us on Tinder"><i class="fa fa-fire-alt" aria-hidden="true"></i></a></div> <div class="col-xs-5"> Tinder Beta</div></div>
+				<div id="sidebar-home-crm" class="sidebar-item row"> <div class="col-xs-5">     <a href="#" class="crm" title=""><i class="fa fa-users" aria-hidden="true"></i></a></div> <div class="col-xs-5"> Social CRM</div></div>
+				<div id="sidebar-settings" class="sidebar-item row"><div class="col-xs-5"> <i class="fas fa-cogs"></i></div><div class="col-xs-5">  Settings</div></div>
+<div id="container"></div>
+<div class="col-sm-12" style="padding-right: 0px !important;">
+
+
+                  <div id="follow_count"></div><br>
+                  <div id="unfollow_count"></div>
+                </div>
+</div>
+
+			
+			</div>
+
+
+
+			<div class="content-wrapper">
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+</div>
+
+
+
+  </body>
+
+  </div>
+
+
+

@@ -1,0 +1,1157 @@
+.btn-primary.active{
+background-color: #777!important;
+
+}
+#crm-table{
+height:300px !important;
+
+
+}
+body{
+background-color: #F8F8F8 !important;
+
+}
+.header-banner {
+color: #7a7979 !important;
+
+}
+#sidebar-instoo{
+margin-left:20px;
+width:150px !important;
+}
+.row{
+    background: rgba(0,0,0,0.0) !important;
+}
+
+#intro {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  background: #FFFFFF center top no-repeat !important;
+  background-size: cover;
+}
+//variables
+$basic-dark-color: #212121;
+$basic-light-color: #fff;
+$fb-color: #3b5998;
+$tw-color: #00aced;
+$g-plus: #dd4b39;
+$dribbble: #ea4c89;
+$pinterest: #cb2027;
+$facebook: #4267B2;
+$insta: #bc2a8d;
+$in: #007bb6;
+$vimeo: #1ab7ea;
+$border-radius: 10px;
+$font-size: 25px;
+
+/*common styles !!!YOU DON'T NEED THEM */
+.container {
+  text-align: center;
+  
+  h1 {
+    font: {
+      family: 'Roboto', sans-serif;
+      weight: 900;
+      size: 30px;
+    }
+    text-transform: uppercase;
+    color: $basic-dark-color;
+    letter-spacing: 3px;
+    
+    span {
+      display: inline-block;
+      
+      &:before,
+      &:after {
+        content: "";
+        display: block;
+        width: 34px;
+        height: 2px;
+        background-color: $basic-dark-color;
+        margin: 0px 0px 0px 2px;
+      }
+    }
+  }
+}
+
+.effect {
+  width: 100%;
+  padding: 50px 0px 70px 0px;
+  background-color: $basic-dark-color;
+  
+  h2 {
+    color: $basic-light-color;
+    font: {
+      family: 'Playfair Display', serif;
+      weight: 400;
+      size: 25px;
+    }
+    letter-spacing: 3px;
+  }
+  
+  &:nth-child(2) {
+    margin-top: 50px;
+  }
+  
+  &:nth-child(2n+1) {
+    background-color: $basic-light-color;
+    
+    h2 {
+      color: $basic-dark-color;
+    }
+  }
+  
+  .buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  a {
+    
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+/*common link styles !!!YOU NEED THEM*/
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+  
+  a {
+    text-decoration: none !important;
+    color: $basic-light-color;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius;
+    margin-right: 20px;
+    font-size: $font-size;
+    overflow: hidden;
+    position: relative;
+    
+    i {
+      position: relative;
+      z-index: 3;
+    }
+    
+    &.fb {
+      background-color: $fb-color;
+    }
+    
+    &.tw {
+      background-color: $tw-color;
+    }
+    &.tinder {
+      background-color: #FE3C72;
+    }
+    &.crm {
+      background-color: #000000;
+    }
+
+    &.tiktok{
+	background-color: #fe2c55;
+}
+    &.pinterest{
+	background-color: #E60023;
+}
+    &.facebook{
+	background-color: #4267B2;
+}
+    &.g-plus {
+      background-color: $g-plus;
+    }
+    
+    &.dribbble {
+      background-color: $dribbble;
+    }
+    
+    &.pinterest {
+      background-color: $pinterest;
+    }
+    &.facebook {
+      background-color: $facebook;
+    }
+    
+    &.insta {
+      background-color: $insta;
+    }
+    
+    &.in {
+      background-color: $in;
+    }
+    
+    &.vimeo {
+      background-color: $vimeo;
+    }
+  }
+}
+
+/* aeneas effect */
+
+.effect.aeneas {
+  
+  a {
+    transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+    
+    i {
+      transition: transform 0.4s linear 0s;
+    }
+    
+    &:hover {
+      transform: rotate(360deg);
+      border-radius: 50%;
+      
+      i {
+        transform: rotate(-360deg);
+      }
+    }
+  }
+}
+
+/* jaques effect */
+.effect.jaques {
+  
+  a {
+    transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+    
+    &:hover {
+      border-radius: 50%;
+    }
+  }
+}
+
+/* egeon effect */
+.effect.egeon {
+  
+  a {
+    transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s;
+    
+    i {
+      transition: transform 0.2s linear 0s;
+    }
+    
+    &:hover {
+      transform: rotate(-90deg);
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      
+      i {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+/* claudio effect */
+
+.effect.claudio {
+  
+  a { 
+    transition: transform 0.2s linear 0s, border-radius 0.2s linear 0s;
+    
+    &:hover {
+      transform: scale(1.2);
+      border-bottom-left-radius: 50%;
+      border-top-right-radius: 50%;
+    }
+  }
+}
+
+/* laertes effect */
+
+.effect.laertes {
+  
+  a {
+    transition: all 0.2s linear 0s;
+    
+    i {
+      transition: all 0.2s linear 0s;
+    }
+   
+    &:hover {
+      border-radius: 50%/20%;
+      
+      i {
+        transform: scale(1.1);
+        text-shadow: 0 0 12px rgba($basic-dark-color, 0.6);
+      }
+    }
+  }
+}
+/*common link styles !!!YOU NEED THEM*/
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+}
+.effect a {
+  text-decoration: none !important;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-size: 25px;
+  overflow: hidden;
+  position: relative;
+}
+.effect a i {
+  position: relative;
+  z-index: 3;
+}
+.effect a.fb {
+  background-color: #3b5998;
+}
+.effect a.tw {
+  background-color: #00aced;
+}
+.effect a.tinder {
+  background-color: #FE3C72;
+}
+.effect a.crm {
+  background-color: #000000;
+}
+
+.effect a.g-plus {
+  background-color: #dd4b39;
+}
+.effect a.dribbble {
+  background-color: #ea4c89;
+}
+.effect a.pinterest {
+  background-color: #cb2027;
+}
+.effect a.facebook {
+  background-color: #4267B2;
+}
+.effect a.insta {
+  background-color: #bc2a8d;
+}
+.effect a.vimeo {
+  background-color: #007bb6;
+}
+.effect a.twitch {
+  background-color: #1ab7ea;
+}
+.effect a.tiktok{
+background-color: #fe2c55;
+}
+.effect a.pinterest{
+background-color: #E60023;
+}
+.effect a.facebook{
+background-color: #4267B2;
+}
+.effect a.google {
+  background-color:red;
+}
+.effect a.github {
+  background-color: black;
+}
+.effect a.vine {
+  background-color: #00a478;
+}
+.effect a.slack {
+  background-color: #ECB22E;
+}
+.effect a.telegram {
+  background-color: #0088CC;
+}
+.effect a.youtube {
+  background-color: #FF0000;
+}
+.effect a.reddit {
+  background-color: #FF4500;
+}
+.effect a.amazon {
+  background-color: #FF9900;
+}
+.effect a.snapchat {
+  background-color: #000000;
+}
+.effect a.in {
+  background-color: #0072b1;
+}
+.effect a.soundcloud {
+  background-color: #ff7700;
+}
+.effect a.yelp {
+  background-color: #c41200;
+}
+.effect a.yahoo {
+  background-color: #0072b1;
+}
+.effect a.spotify {
+  background-color: #0072b1;
+}
+
+/* aeneas effect */
+.effect.aeneas a {
+  -webkit-transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s, -webkit-transform 0.4s linear 0s;
+  transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s, -webkit-transform 0.4s linear 0s;
+  transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+  transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s, -webkit-transform 0.4s linear 0s;
+}
+.effect.aeneas a i {
+  -webkit-transition: -webkit-transform 0.4s linear 0s;
+  transition: -webkit-transform 0.4s linear 0s;
+  transition: transform 0.4s linear 0s;
+  transition: transform 0.4s linear 0s, -webkit-transform 0.4s linear 0s;
+}
+.effect.aeneas a:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  border-radius: 50%;
+}
+.effect.aeneas a:hover i {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+/* jaques effect */
+.effect.jaques a {
+  -webkit-transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+  transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+}
+.effect.jaques a:hover {
+  border-radius: 50%;
+}
+
+/* egeon effect */
+.effect.egeon a {
+  -webkit-transition: border-radius 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
+  transition: border-radius 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
+  transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s;
+  transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
+}
+.effect.egeon a i {
+  -webkit-transition: -webkit-transform 0.2s linear 0s;
+  transition: -webkit-transform 0.2s linear 0s;
+  transition: transform 0.2s linear 0s;
+  transition: transform 0.2s linear 0s, -webkit-transform 0.2s linear 0s;
+}
+.effect.egeon a:hover {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.effect.egeon a:hover i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/* claudio effect */
+.effect.claudio a {
+  -webkit-transition: border-radius 0.2s linear 0s, -webkit-transform 0.2s linear 0s;
+  transition: border-radius 0.2s linear 0s, -webkit-transform 0.2s linear 0s;
+  transition: transform 0.2s linear 0s, border-radius 0.2s linear 0s;
+  transition: transform 0.2s linear 0s, border-radius 0.2s linear 0s, -webkit-transform 0.2s linear 0s;
+}
+.effect.claudio a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+/* laertes effect */
+.effect.laertes a {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.effect.laertes a i {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.effect.laertes a:hover {
+  border-radius: 50%/20%;
+}
+.effect.laertes a:hover i {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  text-shadow: 0 0 12px rgba(33, 33, 33, 0.6);
+}
+#chartContainer{
+ border: 0px solid #888888;
+  box-shadow: 0px 0px 3px 0px #888888;
+  border-radius: 0px;
+height: auto !important;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    margin-top: 20px;
+border-radius: 5px;
+
+}
+.instoo-block{
+ border: 0px solid #888888;
+  box-shadow: 0px 0px 3px 0px #888888;
+  border-radius: 0px;
+height: auto !important;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+border-radius: 5px;
+padding: 5px;
+}
+
+#like-block{
+ border: 0px solid #888888;
+  padding: 10px;
+  box-shadow: 0px 0px 3px 0px #888888;
+  border-radius: 0px;
+height: auto !important;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-right: 10px;
+border-radius: 5px;
+
+}
+#unfollow-block{
+ border: 0px solid #888888;
+  padding: 10px;
+  box-shadow: 0px 0px 3px 0px #888888;
+  border-radius: 0px;
+height: auto !important;
+
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-right: 10px;
+border-radius: 5px;
+
+}
+
+#follow-block{
+ border: 0px solid #888888;
+  padding: 10px;
+  box-shadow: 0px 0px 3px 0px #888888;
+  border-radius: 0px;
+height: auto !important;
+
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-right: 10px;
+border-radius: 5px;
+
+}
+#comment-block{
+ border: 0px solid #888888;
+  padding: 10px;
+  box-shadow: 0px 0px 3px 0px #888888;
+  border-radius: 0px;
+height: auto !important;
+
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-right: 10px;
+border-radius: 5px;
+
+}
+#story-block{
+    margin-top: 10px;
+ 
+border: 0px solid #888888;
+  padding: 10px;
+  box-shadow: 0px 0px 3px 0px #888888;
+  border-radius: 0px;
+height: auto !important;
+
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-right: 10px;
+border-radius: 5px;
+
+}
+
+table.fixed {table-layout:fixed; width:90px;}/*Setting the table width is important!*/
+table.fixed td {overflow:hidden;}/*Hide text outside the cell.*/
+table.fixed td:nth-of-type(1) {width:140px;}/*Setting the width of column 1.*/
+table.fixed td:nth-of-type(2) {width:90px;}/*Setting the width of column 2.*/
+table.fixed td:nth-of-type(3) {width:120px;}/*Setting the width of column 3.*/
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #172336 !important;
+    border-color: #172336 !important;
+}
+.btn-success {
+    color: #fff;
+    background-color: #172336 !important;
+    border-color: #172336 !important;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #172336 !important;
+    border-color: #172336 !important;
+}
+.table{
+  
+  margin-bottom: 0px !important;
+}
+.page-header-instafollow {
+	padding-top: 5px !important;
+	padding-bottom: 10px !important;
+	margin-bottom: 10px !important;
+	background-color: #FFFFFF !important;
+    color: #adadad !important;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider2 {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider2:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider2::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider2::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.header-banner {
+    position: fixed;
+    width: 100%;
+	height: 100%;
+    background-color:#FFFFFF !important;
+    display: block;
+    width: 100%;
+    background-color: #d85c35;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    text-align: left;
+padding-bottom: 0px !important;
+    font-family: "Arial";
+}
+
+    padding-top: 30px !important;
+    padding-bottom: 0px !important;
+}
+
+.body-wrapper {
+	background-color: #F8F8F8;
+	width: 100%;
+	height: 100%;
+    padding-bottom: 100px;
+}
+
+.insta-follow-btn-style{
+    position: fixed;
+    top: 100px;
+    right:  50px;
+    width: 200px;
+    height: 50px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+    z-index:  10;
+}
+
+.insta-follow-btn-style:hover{
+    position: fixed;
+    top: 95px;
+    right:  40px;
+    width: 220px;
+    height: 60px;
+    font-weight: bold;
+    background-color: #b13b00;
+    color: #ececec;
+    z-index:  10;
+}
+
+.insta-follow-btn-style:active{
+    position: fixed;
+    top: 95px;
+    right:  40px;
+    width: 220px;
+    height: 60px;
+    font-weight: bold;
+    background-color: #d85c35;
+    color: #000000;
+    z-index:  10;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 0px !important;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;
+}
+#sidebar-wrapper {
+	margin-top: 5px;
+	background-color: #FFFFFF;
+	width: 200px;
+	min-width: 0px;
+	height: 100%;
+	position: fixed;
+	display: block;
+	padding-top: 10px;
+    box-shadow: 6px 4px 2px 2px #FFFFFF;
+}
+
+.sidebar-item {
+	display: block;
+	width: 150px;
+	background-color: #FFFFFF;
+	color: #7a7979;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding: 2px 15px;
+	text-align: left;
+    font-family: "Arial";
+}
+
+.sidebar-item:hover {
+	display: block;
+	width: 100%;
+	background-color: #BBBBBB !important;
+	color: #172336;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding: 2px 15px;
+	text-align: left;
+	font-family: "Arial";
+}
+
+.sidebar-item:active {
+	display: block;
+	width: 100%;
+	background-color: #999999 !important;
+	color: #172336;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding: 2px 15px;
+	text-align: left;
+	font-family: "Arial";
+}
+
+.sidebar-item-active {
+	display: block;
+	width: 150px;
+	background-color: #999999 !important;
+	color: #172336;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding: 2px 15px;
+	text-align: left;
+    font-family: "Arial";
+}
+
+.content-wrapper {
+	margin-top: 0px;
+	width: 85%;
+	display: block;
+	margin-left: 15%;
+	height: 100%;
+	margin-right: 0%;
+	padding: 0px;
+	overflow-y: auto;
+}
+
+.status-block {
+	width: 100%;
+	height: 100px;
+}
+
+.status-img-block {
+	width: 100%;
+	height: 80%;
+	text-align: center;
+}
+
+.status-name-block {
+	width: 100%;
+	height: 20%;
+	text-align: center;
+}
+
+#follow-block, #unfollow-block, #collect-users-block{
+}
+
+#AddUserToWhitelistModal
+{
+}
+
+.scroll-style::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	background-color: #555;
+}
+
+.scroll-style::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #555;
+}
+
+.scroll-style::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+	background-color: #F5F5F5;
+}
+
+.follow-table-scroll {
+	overflow-y: auto;
+    height: 300px;
+    overflow-x: hidden;
+}
+
+.align-mid-vertical {
+	vertical-align: middle !important;
+	font-weight: bold !important;
+	text-align: center !important;
+}
+
+.instafollow-status-box {
+	border: 2px solid #FFFFFF !important;
+	background-color: #FFFFFF;
+}
+
+.text-instafollow {
+	color: #7a7979;
+	font-family: "Arial";
+}
+
+.text-instafollow-settings {
+	color: #d85c35;
+	font-family: "Arial";
+	text-align: left;
+}
+
+.text-instafollow-num{
+	color: #d85c35;
+	font-family: "Arial";
+	text-align: right;
+}
+
+.text-instafollow-td {
+	color: #111111;
+	font-family: "Arial";
+	text-align: left !important;
+}
+
+.img-current-user {
+	border: 2px solid #242424;
+	border-radius: 10px;
+}
+
+.settings-block {
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	margin: 2px;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.button-settings {
+	margin: 10px;
+}
+
+.setting-options {
+	margin-bottom: 50px;
+}
+
+.whitelist-bg {
+	background-color: #FFFFFF;
+	padding-top: 10px;
+	border-radius: 25px;
+}
+
+.whitelist-search {
+	background-color: #444444 !important;
+    color: #f3f3f3 !important;
+    font-weight: bold !important;
+}
+
+.whitelist-content {
+	height: 250px;
+	overflow-y: auto;
+}
+
+.help-bg {
+	background-color: #FFFFFF;
+	padding-top: 10px;
+	border-radius: 25px;
+	height: 60%;
+	width: 70%;
+	position: fixed;
+}
+
+.vertical-mid {
+	vertical-align: middle !important;
+}
+
+.float-center {
+	margin: auto;
+	float: none;
+}
+
+.buy-coffee-button {
+	box-shadow: 0 0 20px 2px black;
+}
+
+#purchase {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.95); /* Black background with opacity */
+    z-index: 9999; /* Specify a stack order in case you're using a different order for other elements */
+}
+#cheater {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.95); /* Black background with opacity */
+    z-index: 9999; /* Specify a stack order in case you're using a different order for other elements */
+}
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.95); /* Black background with opacity */
+    z-index: 9999; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+
+#overlay-text {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    color: #FFFFFF;
+}
+#overlay-purchase {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    color: #FFFFFF;
+}
+
+.modal-user-bg {
+	background-color: #242424 !important;
+	border-radius: 20px !important;
+}
+
+#add-user-results {
+	padding: 5px;
+	max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#add-user-results li {
+    display: block;
+    border: 2px solid;
+    border-color: #FFFFFF;
+    position: relative;
+    background-color: 242424;
+    padding: 5px;
+    width: 100%;
+   	margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#add-user-results li:hover {
+    display: block;
+    border: 2px solid;
+    border-color: #d85c35;
+    position: relative;
+    background-color: #242424;
+    padding: 5px;
+    width: 100%;
+   	margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#add-user-results li:active {
+    display: block;
+    border: 2px solid;
+    border-color: #d85c35;
+    position: relative;
+    background-color: #242424;
+    padding: 5px;
+    width: 100%;
+   	margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.modal-backdrop {
+   background-color: #505050;
+   opacity: 0.6;
+   z-index: -1;
+}
+
+#help-disclaimer
+{
+	bottom: 50px;
+	left: 20px;
+	position: absolute;
+	color: #ff0000;
+	font-family: "Arial";
+	font-weight: bold;
+}
+/***************** External *******************/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-top: 10px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c13434;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #329811;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+tags-input .tags .tag-item {
+
+  max-width: calc(100% - 5px);
+  padding-right: 20px;
+  position: relative;
+
+  span {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .remove-button {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+  }
+
+}
+.tag-item { height:auto; max-width:100%; }

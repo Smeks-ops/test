@@ -1,0 +1,380 @@
+
+<!-- saved from url=(0044)https://instoo.com/AutoBaiter/settings9.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<div class="row">
+<div class="col-md-12">
+<div class="row">
+<div class="col-xs-12 whitelist-bg">
+<div class="row">
+<div class="col-md-12 text-instafollow">
+<h3>
+Do Not Unfollow List
+</h3>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<input type="text" class="form-control whitelist-search" id="user-search">
+<br>
+<div class="whitelist-content scroll-style">
+<table class="table">
+<tbody id="whitelisted-users">
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="row" style="margin-top: 20px;">
+<div class="col-md-2">
+<button class="btn btn-md pull-right btn-success button-settings" id="whitelist-clear" type="button">
+Clear All
+</button>
+</div>
+<div class="col-md-2">
+<button class="btn btn-md pull-right btn-success button-settings" type="button" id="whitelist-user">
+Add User(s)
+</button>
+</div>
+<div class="col-md-3">
+</div>
+</div>
+</div>
+<div class="col-md-4">
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-xs-12">
+<center> <button class="btn btn-md btn-success btn-block button-settings" type="button" id="generateHashtags"> Generate Hashtags</button>
+</center></div>
+</div>
+<hr>
+<div class="row">
+<div class="col-xs-12" id="hashtagsOutput">
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<table class="table instafollow-status-box" style="border-color: #FFF !important;"><tbody>
+<tr>
+<td class="align-mid-vertical">
+<p id="whitelist-following-text" style="text-align: left;">Enable Story Reactions And Select Which Emojis To Use</p>
+</td>
+<td class="align-mid-vertical">
+<label class="switch">
+<input id="set-react-check" type="checkbox">
+<span class="slider round"></span>
+</label>
+</td>
+</tr>
+</tbody>
+</table>
+<input type="checkbox" name="skills" value="1" class="reacts"> 😂
+<input type="checkbox" name="skills" value="2" class="reacts"> 😮
+<input type="checkbox" name="skills" value="3" class="reacts"> 😍
+<input type="checkbox" name="skills" value="4" class="reacts"> 😢
+<input type="checkbox" name="skills" value="5" class="reacts"> 👏
+<input type="checkbox" name="skills" value="6" class="reacts"> 🔥
+<input type="checkbox" name="skills" value="7" class="reacts"> 🎉
+<input type="checkbox" name="skills" value="8" class="reacts"> 💯
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-xs-12">
+<table class="table instafollow-status-box" style="border-color: #FFF !important;"><tbody>
+<tr>
+<td class="align-mid-vertical">
+<p id="whitelist-followings-text" style="text-align: left;">Add Ideal Targets To Account Targets Automatically</p>
+</td>
+<td class="align-mid-vertical">
+<label class="switch">
+<input id="set-addideal-check" type="checkbox">
+<span class="slider round"></span>
+</label>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-xs-12">
+<table class="table instafollow-status-box" style="border-color: #FFF !important;"><tbody>
+<tr>
+<td class="align-mid-vertical">
+<p id="whitelist-followings-text" style="text-align: left;">Only Unfollow Users Instoo Interacted With Before</p>
+</td>
+<td class="align-mid-vertical">
+<label class="switch">
+<input id="set-unfollowinstoo-check" type="checkbox">
+<span class="slider round"></span>
+</label>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-xs-12">
+<table class="table instafollow-status-box" style="border-color: #FFF !important;"><tbody>
+<tr>
+<td class="align-mid-vertical">
+<p id="whitelist-filters-text" style="text-align: left;">Enable Profile Filters To Avoid Specific Content</p>
+</td>
+<td class="align-mid-vertical">
+<label class="switch">
+<input id="set-enablefilters-check" type="checkbox">
+<span class="slider round"></span>
+</label>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-xs-12">
+<div class="modal fade" id="calModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-full" role="document">
+<div class="modal-content">
+<form id="form" method="post" enctype="application/x-www-form-urlencoded" action="https://instoo.com/user/calendar">
+<br><center>
+<br>Duration:<select name="duration" id="duration">
+<option value="8">8</option>
+<option value="7">7</option>
+<option value="6">6</option>
+<option value="5">5</option>
+<option value="4">4</option>
+<option value="3">3</option>
+<option value="2">2</option>
+<option value="1">1</option>
+</select> Hours
+<br>
+Start Date: <input readonly="readonly" id="datestring" type="text" name="date">
+<br>
+End Date: <input readonly="readonly" id="endstring" type="text" name="end">
+<br>
+Instagram Account: <input readonly="readonly" id="insta" type="text" name="insta">
+<br>
+Start Time:
+<select name="time" id="time">
+<option value="0" selected="">12.00 AM</option>
+<option value="1">01.00 AM</option>
+<option value="2">02.00 AM</option>
+<option value="3">03.00 AM</option>
+<option value="4">04.00 AM</option>
+<option value="5">05.00 AM</option>
+<option value="6">06.00 AM</option>
+<option value="7">07.00 AM</option>
+<option value="8">08.00 AM</option>
+<option value="9">09.00 AM</option>
+<option value="10">10.00 AM</option>
+<option value="11">11.00 AM</option>
+<option value="12">12.00 PM</option>
+<option value="13">01.00 PM</option>
+<option value="14">02.00 PM</option>
+<option value="15">03.00 PM</option>
+<option value="16">04.00 PM</option>
+<option value="17">05.00 PM</option>
+<option value="18">06.00 PM</option>
+<option value="19">07.00 PM</option>
+<option value="20">08.00 PM</option>
+<option value="21">09.00 PM</option>
+<option value="22">10.00 PM</option>
+<option value="23">11.00 PM</option>
+</select>
+<br>
+<input type="checkbox" name="actions" value="0" class="actions"> Follows
+<input type="checkbox" name="actions" value="1" class="actions"> Likes
+<input type="checkbox" name="actions" value="2" class="actions"> Auto-DMs
+<input type="checkbox" name="actions" value="3" class="actions"> Unfollows
+<br>
+<button class="btn btn-md btn-success btn-block button-settings" type="button" id="sub-cal"> Submit</button>
+<br>
+
+</center></form></div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="row hide">
+<div class="col-xs-12">
+<table class="table instafollow-status-box" style="border-color: #FFF !important;"><tbody>
+<tr>
+<td class="align-mid-vertical">
+<p id="whitelist-filters-text" style="text-align: left;">Send Daily Email Reports</p>
+</td>
+<td class="align-mid-vertical">
+<label class="switch">
+<input id="set-enableemail-check" type="checkbox">
+<span class="slider round"></span>
+</label>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<button class="btn btn-md btn-success btn-block button-settings" id="add-blacklist" type="button"> Add To Blacklist</button><br>
+Blacklist entries can still be used as targets and unfollowed.
+<div id="blacklist" style="overflow:auto; max-height:100px;"></div>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-xs-8">
+<button class="btn btn-md btn-success btn-block button-settings" id="add-filter" type="button"> Add To Bio Text And Photo Content Filters</button>
+</div>
+<div class="col-xs-4">
+<button class="btn btn-md btn-success btn-block button-settings" id="clear-filter" type="button"> Clear Filters</button>
+</div>
+<div class="col-xs-12">
+<div id="filters" style="overflow:auto; max-height:100px;"></div>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-xs-12">
+Target Filters
+</div>
+<div class="col-xs-3">
+<label for="minPhoto">Min Photos:</label>
+<select name="minPhoto" id="minPhoto">
+<option value="0">0</option>
+<option value="1" selected="selected">1</option>
+<option value="5">5</option>
+</select>
+</div>
+<div class="col-xs-3">
+<label for="maxFollowing">Max Target Following:</label>
+<select name="maxFollowing" id="maxFollowing">
+<option value="100">100</option>
+<option value="1000">1000</option>
+<option value="10000">10000</option>
+<option value="100000" selected="selected">100000</option>
+</select>
+</div>
+<div class="col-xs-3">
+<label for="minFollowing">Min Target Following:</label>
+<select name="minFollowing" id="minFollowing">
+<option value="0">0</option>
+<option value="100" selected="selected">100</option>
+<option value="1000">1000</option>
+<option value="10000">10000</option>
+<option value="100000">100000</option>
+</select>
+</div>
+<div class="col-xs-3">
+<label for="maxFollower">Max Target Followers:</label>
+<select name="maxFollower" id="maxFollower">
+<option value="100">100</option>
+<option value="1000">1000</option>
+<option value="10000">10000</option>
+<option value="100000" selected="selected">100000</option>
+</select>
+</div>
+<div class="col-xs-3">
+<label for="minFollower">Min Target Followers:</label>
+<select name="minFollower" id="minFollower">
+<option value="0">0</option>
+<option value="100" selected="selected">100</option>
+<option value="10000">10000</option>
+<option value="100000">100000</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<div id="activity_log" style="overflow:auto; max-height:100px;"></div>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-xs-12">
+<div id="IdealTargets" style="overflow:auto; max-height:100px;"></div>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-md-6">
+<input type="file" id="import-file-input" style="display: none;">
+<button class="btn btn-md btn-success btn-block button-settings" id="cloud-clear" type="button"> Clear Cloud Backup</button>
+</div>
+<div class="col-md-6">
+<input type="file" id="import-file-input" style="display: none;">
+<button class="btn btn-md btn-success btn-block button-settings" id="cloud-backup" type="button"> Cloud Backup</button>
+</div>
+<div class="col-md-3">
+<button class="btn btn-md btn-danger btn-block button-settings" id="default-settings" type="button">Reset Limits</button>
+</div>
+<div class="col-md-3">
+<button class="btn btn-md btn-danger btn-block button-settings" id="switch-account" type="button">Switch Instagram Account</button>
+</div>
+<div class="col-md-3">
+<button class="btn btn-md btn-danger btn-block button-settings" id="export" type="button">Export</button>
+</div>
+<div class="col-md-3">
+<button class="btn btn-md btn-danger btn-block button-settings" id="import" type="button">Import</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<div id="confirm-reset-modal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<div class="modal-content modal-user-bg">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">×</button>
+<h2 class="modal-title text-instafollow">Confirm</h2>
+</div>
+<div class="modal-body">
+<h4 style="color: #FFF;">All Collect Pools will be deleted except for Do Not Unfollow List, Do you want to Continue ? </h4>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal" id="confirm-modal-btn-yes">Yes</button>
+<button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
+</div>
+</div>
+</div>
+</div>
+<div id="AddUserToWhitelistModal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<div class="modal-content modal-user-bg">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">×</button>
+<h4 class="modal-title text-instafollow">Add User to Do Not Unfollow List</h4>
+</div>
+<div class="modal-body">
+<div class="row">
+<div class="col-md-12">
+<div class="input-group">
+<div style="max-width:250px;" class="bootstrap-tagsinput"> <input type="text" class="bootstrap-tagsinput form-control" data-role="tagsinput" id="white_accounts" value="" style="display: none;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>
